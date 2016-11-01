@@ -8,8 +8,13 @@ var concat = require('gulp-concat');
 var distPath = './dist/css';
 var stlyePath = './lib/css';
 
+gulp.task('fonts', function() {
+    return gulp.src(['./node_modules/bootstrap/fonts/*'])
+        .pipe(gulp.dest('./dist/fonts'));
+});
+
 // Compile less
-gulp.task('less', function() {
+gulp.task('less', ['fonts'], function() {
     return gulp.src(['./lib/css/style.less'])
         .pipe(less({
             paths: [ path.join(__dirname, 'less', 'includes') ]

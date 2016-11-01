@@ -3,6 +3,7 @@ var watch = require('gulp-watch');
 var path = require('path');
 var less = require('gulp-less');
 var cleancss = require('gulp-clean-css');
+var concat = require('gulp-concat');
 
 var distPath = './dist/css';
 var stlyePath = './lib/css';
@@ -14,6 +15,14 @@ gulp.task('less', function() {
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
         .pipe(gulp.dest(distPath));
+});
+
+gulp.task('scripts', function() {
+    return gulp.src(['./node_modules/jquery/dist/jquery.min.js',
+        './node_modules/bootstrap/dist/js/bootstrap.min.js',
+        './lib/js/script.js'])
+        .pipe(concat('script.js'))
+        .pipe(gulp.dest('./dist/js/'));
 });
 
 //watch

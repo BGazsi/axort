@@ -7280,7 +7280,7 @@ body {
   background: url(../../img/bg-1.jpg) fixed;
 }
 .main-wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .logo {
@@ -7291,7 +7291,20 @@ body {
   border: 3px solid gray;
 }
 .navbar.navbar-collapse .navbar-inner {
-  border: 3px solid black;
+  border: 2px solid black;
+}
+.navbar.navbar-collapse .navbar-inner li > a {
+  border-right: 2px solid black;
+}
+.navbar.navbar-collapse .navbar-inner li > a:hover:after {
+  content: '';
+  height: 1px;
+  width: 25px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -13px;
+  background: black;
 }
 .navbar.navbar-collapse .navbar-inner li.active > a,
 .navbar.navbar-collapse .navbar-inner li.active > a:focus,

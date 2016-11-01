@@ -6,7 +6,7 @@ body {
 }
 
 .main-wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -18,7 +18,20 @@ body {
   padding: 5px;
   border: 3px solid gray;
   .navbar-inner {
-    border: 3px solid black;
+    border: 2px solid black;
+    li > a {
+      border-right: 2px solid black;
+      &:hover:after {
+        content: '';
+        height: 1px;
+        width: 25px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -13px;
+        background: black;
+      }
+    }
     li.active {
       > a,
       > a:focus,
@@ -41,8 +54,4 @@ body {
     border: none;
     .box-shadow(none);
   }
-}
-
-.main-header {
-
 }

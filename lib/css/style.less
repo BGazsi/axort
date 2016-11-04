@@ -19,7 +19,7 @@ body {
   border: 3px solid gray;
   .navbar-inner {
     border: 2px solid black;
-    li > a {
+    > ul > li > a {
       border-right: 2px solid black;
       &:hover:after {
         content: '';
@@ -48,10 +48,43 @@ body {
         color: black;
         .box-shadow(none);
       }
+      &:before {
+        content: '';
+        height: 5px;
+        position: absolute;
+        bottom: -7px;
+        background: @yellow;
+        width: 100%;
+        left: -1px;
+      }
+      .dropdown-menu {
+        margin-top: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+        li > a {
+          padding: 10px;
+          border-left: 3px solid white;
+          border-bottom: 1px solid gray;
+          &:hover {
+            background: none;
+            border-left: 3px solid @yellow;
+          }
+        }
+      }
     }
   }
   .form-control {
     border: none;
+    height: 60px;
     .box-shadow(none);
   }
+}
+
+.search-button {
+  background: none;
+  border: none;
+  height: 60px;
+  padding-top: 5px;
+  font-size: 16px;
+  width: 35px;
 }

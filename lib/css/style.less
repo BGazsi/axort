@@ -1,6 +1,5 @@
 @import "init";
 
-//custom css
 body {
   background: url(../../img/bg-1.jpg) fixed;
 }
@@ -10,81 +9,7 @@ body {
   margin: 0 auto;
 }
 
-.logo {
-  padding: 30px 0;
-}
-
-.navbar.navbar-collapse {
-  padding: 5px;
-  border: 3px solid gray;
-  .navbar-inner {
-    border: 2px solid black;
-    > ul > li > a {
-      border-right: 2px solid black;
-      &:hover:after {
-        content: '';
-        height: 1px;
-        width: 25px;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        margin-left: -13px;
-        background: black;
-      }
-    }
-    li.active {
-      > a,
-      > a:focus,
-      > a:active {
-        background: #000;
-        color: white;
-      }
-    }
-    li.open {
-      > a,
-      > a:focus,
-      > a:active {
-        background: white;
-        color: black;
-        .box-shadow(none);
-      }
-      &:before {
-        content: '';
-        height: 5px;
-        position: absolute;
-        bottom: -7px;
-        background: @yellow;
-        width: 100%;
-        left: -1px;
-      }
-      .dropdown-menu {
-        margin-top: 10px;
-        padding-top: 0;
-        padding-bottom: 0;
-        li > a {
-          padding: 10px;
-          border-left: 3px solid white;
-          border-bottom: 1px solid gray;
-          &:hover {
-            background: none;
-            border-left: 3px solid @yellow;
-          }
-        }
-      }
-    }
-  }
-  .form-control {
-    border: none;
-    height: 60px;
-    .box-shadow(none);
-  }
-}
-
-.search-button {
-  background: none;
-  border: none;
-  height: 60px;
-  padding-top: 5px;
-  font-size: 16px;
-  width: 35px;
+.body {
+  margin: 30px 1px 0;
+  border: 3px solid @gray-transparent;
 }

@@ -7276,19 +7276,12 @@ address {
   padding: 9px;
   border-radius: 3px;
 }
-body {
-  background: url(../../img/bg-1.jpg) fixed;
-}
-.main-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-}
 .logo {
   padding: 30px 0;
 }
 .navbar.navbar-collapse {
   padding: 5px;
-  border: 3px solid gray;
+  border: 3px solid rgba(0, 0, 0, 0.35);
 }
 .navbar.navbar-collapse .navbar-inner {
   border: 2px solid black;
@@ -7356,4 +7349,15 @@ body {
   padding-top: 5px;
   font-size: 16px;
   width: 35px;
+}
+body {
+  background: url(../../img/bg-1.jpg) fixed;
+}
+.main-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.body {
+  margin: 30px 1px 0;
+  border: 3px solid rgba(0, 0, 0, 0.35);
 }

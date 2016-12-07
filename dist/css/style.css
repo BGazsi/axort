@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Anonymus;
+  src: url(../../fonts/AnonymousPro.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../../fonts/OpenSans-Regular.ttf);
+}
 .alert {
   padding: 15px;
   margin-bottom: 40px;
@@ -7276,6 +7284,10 @@ address {
   padding: 9px;
   border-radius: 3px;
 }
+header {
+  font-family: Anonymus;
+  font-size: 18px;
+}
 .logo {
   padding: 30px 0;
 }
@@ -7366,6 +7378,7 @@ body {
   margin: 0 auto;
 }
 .body {
+  font-family: OpenSans;
   margin: 30px 1px 0;
   border: 3px solid rgba(0, 0, 0, 0.35);
   background: url(../../img/body-bg.jpg) repeat 0 0;
@@ -7423,6 +7436,8 @@ h1,
 h2 {
   position: relative;
   padding-bottom: 5px;
+  font-weight: 600;
+  font-family: Anonymus;
 }
 h1:after,
 h2:after {
@@ -7434,7 +7449,14 @@ h2:after {
   bottom: 0;
   left: 0;
 }
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 18px;
+}
 h3 {
+  font-family: Anonymus;
   border-bottom: 1px solid #FFF;
   margin: 5px 0;
 }
@@ -7452,6 +7474,8 @@ a:hover {
   text-decoration: none;
 }
 .menu {
+  font-family: Anonymus;
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }

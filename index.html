@@ -9,12 +9,16 @@
     <meta http-equiv="content-language" content="de">
     <title>Axort</title>
     <meta property="og:title" content="Axort">
+    <!--opengraph facebook tags-->
+    <!--twitter meta tags-->
+    <!--html5 tagek-->
+    <!--aria attribútumok-->
 
     <link rel="stylesheet" type="text/css" href="dist/css/style.css">
 </head>
 
 <body>
-    <main class="main-wrapper">
+    <div class="main-wrapper">
         <div class="logo">
             <img src="img/logo.png" alt="axort">
         </div>
@@ -39,7 +43,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <button class="pull-right search-button"><span class="glyphicon glyphicon-search"></span></button>
+                            <button class="pull-right search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                             <div class="form-group pull-right">
                                 <input type="text" class="form-control">
                             </div>
@@ -48,7 +52,7 @@
                 </div>
             </nav>
         </header>
-        <section class="body">
+        <div class="body">
             <div id="main-carousel" class="carousel slide" data-ride="carousel">
 
                 <ol class="carousel-indicators">
@@ -78,8 +82,77 @@
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 </a>
             </div>
-        </section>
-    </main>
+            <div class="row">
+                <main class="col-sm-8 col-sm-push-4">
+                    <section class="content-box">
+                        <h1>Über uns</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada, sem sed commodo dictum,
+                            arcu libero hendrerit nisl, ut accumsan massa sapien porta velit. Maecenas rutrum metus quis
+                            est lacinia, eget feugiat nunc viverra. Nulla sit amet ornare quam, vitae mollis tortor.
+                            Mauris maximus massa ac metus aliquet vulputate. Ut vel purus a turpis ullamcorper auctor
+                            blandit quis neque. In hac habitasse platea dictumst. Nulla tristique ornare mi a ullamcorper.
+                            Nam non lectus ex.</p>
+                        <p>Aliquam commodo, diam vitae pulvinar posuere, enim felis mollis ligula, eget gravida sapien
+                            urna ac elit. Nullam eu eros condimentum, molestie arcu nec, pretium urna. Pellentesque euismod
+                            ac nisl scelerisque vehicula. Nullam pellentesque nisl arcu, non hendrerit justo egestas id.
+                            Aliquam tempus, est non gravida ornare, lacus metus accumsan lacus, nec hendrerit quam sapien nec sapien. </p>
+                        <p>Mauris faucibus pretium mattis. Mauris consequat urna massa, sed pellentesque tellus
+                            condimentum eget. Duis maximus risus quis ipsum varius, ut feugiat libero facilisis.
+                            Morbi sed consectetur erat, id fringilla mauris. Aliquam ultricies quis tellus ut euismod.
+                            Nunc condimentum est vulputate risus venenatis, vitae malesuada nulla commodo.
+                            Suspendisse faucibus ante nisl, mattis semper leo tempus sit amet. Donec accumsan massa urna.</p>
+                    </section>
+                </main>
+                <aside class="col-sm-4 col-sm-pull-8">
+                    <div class="content-box">
+                        <h2>Produkten</h2>
+
+                        <ul class="menu">
+                            <li class="opened">
+                                <a class="" onclick="rerurn false;">Grabsteine</a>
+                                <ul>
+                                    <li><a href="#">Grabsteine, Kopfsteine</a></li>
+                                    <li><a href="#">Dienstleistungen</a></li>
+                                    <li><a href="#">Zubehör und Inschrift</a></li>
+                                </ul>
+                            </li>
+                            <li class="opened">
+                                <a href="#">Arbeitsplatten</a>
+                                <ul>
+                                    <li><a href="#">Küchenplatten</a></li>
+                                    <li><a href="#">Badezimmerplatte</a></li>
+                                    <li><a href="#">Tische und Möbelabdeckplatten</a></li>
+                                </ul>
+                            </li>
+                            <li class="opened">
+                                <a href="#">Beläge</a>
+                                <ul>
+                                    <li><a href="#">Bodenplatten</a></li>
+                                    <li><a href="#">Treppen</a></li>
+                                    <li><a href="#">Wandbedeckungen</a></li>
+                                    <li><a href="#">Zaunabdeckplatten</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Fensterbänke</a></li>
+                            <li><a href="#">Gartendekor aus Kunststein</a></li>
+                            <li class="opened">
+                                <a href="#">Steinpflegeprodukte</a>
+                                <ul>
+                                    <li><a href="#">AKEMI AntiFleck</a></li>
+                                    <li><a href="#">AKEMI SteinLotion</a></li>
+                                    <li><a href="#">AKEMI SteinMilch</a></li>
+                                    <li><a href="#">AKEMI SteinSeife</a></li>
+                                    <li><a href="#">AKEMI SteinImprägnierung</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
 
     <script src="dist/js/script.js"></script>
 </body>

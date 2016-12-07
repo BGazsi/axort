@@ -4,6 +4,15 @@ body {
   background: url(../../img/bg-1.jpg) fixed;
 }
 
+.btn {
+  background-image: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
 .main-wrapper {
   max-width: 1100px;
   margin: 0 auto;
@@ -13,6 +22,62 @@ body {
   margin: 30px 1px 0;
   border: 3px solid @gray-transparent;
   background: url(../../img/body-bg.jpg) repeat 0 0;
+}
+
+.carousel-caption {
+  top: 50%;
+  left: 20%;
+  text-align: left;
+  max-width: 40%;
+
+  .carousel-inner {
+    background: #000;
+    opacity: .7;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.carousel-indicators {
+  text-align: left;
+  li {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}
+
+.carousel-control {
+  top: 50%;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FFF;
+  background: transparent;
+  text-shadow: none;
+  padding: 10px;
+  font-size: 19px;
+  opacity: 1;
+
+  &:hover {
+    background: #FFF;
+    color: @yellow;
+    border-color: @yellow;
+  }
+
+  &.right {
+    margin-right: 10px;
+    span {
+      margin-left: 3px;
+    }
+  }
+
+  &.left {
+    margin-left: 10px;
+    span {
+      margin-right: 3px;
+    }
+  }
 }
 
 h1, h2 {
@@ -27,6 +92,11 @@ h1, h2 {
     bottom: 0;
     left: 0;
   }
+}
+
+h3 {
+  border-bottom: 1px solid #FFF;
+  margin: 5px 0;
 }
 
 .content-box {
@@ -73,6 +143,29 @@ a {
         content: '\25b6';
         margin-right: 10px;
       }
+    }
+  }
+}
+
+
+img.full-size-image {
+  width: 100%;
+}
+
+footer {
+  background: #FFF;
+  padding: 10px;
+
+  .logo {
+    padding: 40px 0 20px;
+    border-bottom: 2px solid @yellow;
+  }
+  .contact {
+    p {
+      margin: 0;
+    }
+    .email {
+      color: #428bca;
     }
   }
 }

@@ -23,39 +23,49 @@
             <img src="img/logo.png" alt="axort">
         </div>
         <header class="main-header navbar navbar-default">
-            <nav class="navbar navbar-collapse">
-                <div class="navbar navbar-inner">
-                    <ul class="nav navbar-nav navbar-main">
-                        <li class=" active"><a href="#">Über uns</a></li>
-                        <li class="dropdown"><a href="#">Materialien</a></li>
-                        <li class=""><a href="#">Prospekte, Aktuelle Aktionen</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Produkten</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Grabsteine</a></li>
-                                <li><a href="#">Arbeitsplatten</a></li>
-                                <li><a href="#">Beläge</a></li>
-                                <li><a href="#">Fensterbänke</a></li>
-                                <li><a href="#">Gartendekor aus Kunststein</a></li>
-                                <li><a href="#">Steinpflegeprodukte</a></li>
-                            </ul>
-                        </li>
-                        <li class=""><a href="#">Kontakt</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <button class="pull-right search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                            <div class="form-group pull-right">
-                                <input type="text" class="form-control">
-                            </div>
-                        </li>
-                    </ul>
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Axort</a>
+                </div>
+                <div id="main-navbar" class="collapse navbar-collapse">
+                    <div class="navbar navbar-inner">
+                        <ul class="nav navbar-nav navbar-main">
+                            <li class=" active"><a href="#">Über uns</a></li>
+                            <li class="dropdown"><a href="#">Materialien</a></li>
+                            <li class=""><a href="#">Prospekte, Aktuelle Aktionen</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Produkten</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Grabsteine</a></li>
+                                    <li><a href="#">Arbeitsplatten</a></li>
+                                    <li><a href="#">Beläge</a></li>
+                                    <li><a href="#">Fensterbänke</a></li>
+                                    <li><a href="#">Gartendekor aus Kunststein</a></li>
+                                    <li><a href="#">Steinpflegeprodukte</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Kontakt</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <button class="pull-right search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                <div class="form-group pull-right">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
         <div class="body">
             <div id="main-carousel" class="carousel slide" data-ride="carousel">
 
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators hidden-xs">
                     <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#main-carousel" data-slide-to="1"></li>
                     <li data-target="#main-carousel" data-slide-to="2"></li>

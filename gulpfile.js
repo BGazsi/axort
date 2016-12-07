@@ -27,6 +27,7 @@ gulp.task('scripts', function() {
         './node_modules/bootstrap/js/transition.js',
         './node_modules/bootstrap/js/dropdown.js',
         './node_modules/bootstrap/js/carousel.js',
+        './node_modules/bootstrap/js/collapse.js',
         './lib/js/script.js'])
         .pipe(concat('script.js'))
         .pipe(gulp.dest('./dist/js/'));
